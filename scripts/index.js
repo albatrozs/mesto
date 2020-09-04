@@ -2,14 +2,12 @@
 let popup = document.querySelector('.popup');
 let popupOpenButton = document.querySelector('.js-profile__open-popup');
 let popupCloseButton = document.querySelector('.popup__close-icon');
-let popupSaveButton = document.querySelector('.popup__button')
+let popupSaveButton = document.querySelector('.popup__button');
 
 let popupToggle = function () {
     popup.classList.toggle('popup_opened');
 }
 
-popupOpenButton.addEventListener('click', popupToggle);
-popupCloseButton.addEventListener('click', popupToggle);
 
 // Находим форму в DOM
 let formElement = document.querySelector('.popup__input-container');
@@ -22,27 +20,24 @@ function formSubmitHandler (evt) {
                         // О том, как это делать, расскажем позже.
 
     // Находим поля формы в DOM
-    let nameInput = document.querySelector('.popup__name-input');// Воспользуйтесь инструментом .querySelector()
-    let jobInput = document.querySelector('.popup__job-input');// Воспользуйтесь инструментом .querySelector()
-
-    // Получите значение полей из свойства value
-    nameInput=nameInput.value;
-    jobInput=jobInput.value;
+let nameInput = document.querySelector('.popup__name-input');// Воспользуйтесь инструментом .querySelector()
+let jobInput = document.querySelector('.popup__job-input');// Воспользуйтесь инструментом .querySelector()
     
-    // Выберите элементы, куда должны быть вставлены значения полей
-    let profileName = document.querySelector('.profile__name')
-    let profileJob = document.querySelector('.profile__job')
+// Выберите элементы, куда должны быть вставлены значения полей
+let profileName = document.querySelector('.profile__name')
+let profileJob = document.querySelector('.profile__job')
+    // Получите значение полей из свойства value
+nameInput=nameInput.value;
+jobInput=jobInput.value;
 
     // Вставьте новые значения с помощью textContent
-    profileName.textContent = nameInput;
-    profileJob.textContent = jobInput;
+profileName.textContent = nameInput;
+profileJob.textContent = jobInput;
 }
 
+popupOpenButton.addEventListener('click', popupToggle);
+popupCloseButton.addEventListener('click', popupToggle);
 // Прикрепляем обработчик к форме:
 // он будет следить за событием “submit” - «отправка»
 formElement.addEventListener('submit', formSubmitHandler);
-popupSaveButton.addEventListener('click', formSubmitHandler);
 popupSaveButton.addEventListener('click', popupToggle);
-
-
-

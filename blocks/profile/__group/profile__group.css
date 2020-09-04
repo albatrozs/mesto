@@ -1,0 +1,23 @@
+.profile__group{
+    display: grid;
+    gap: 17px;
+    grid-template-columns: 295px 24px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+
+@media screen and (max-width: 881px){
+    .profile__group{
+        grid-template-columns: 201px 18px;
+        max-width: 220px;
+        gap: 1px;
+       
+    } 
+  }
+@media screen and (max-width: 583px){
+    .profile__group{
+        grid-template-columns: 201px 18px;
+        margin-bottom: 14px;
+    } 
+  }

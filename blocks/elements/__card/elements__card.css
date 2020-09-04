@@ -1,0 +1,9 @@
+.elements__card{
+    width: 282px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    border-radius: 10px;
+    overflow: hidden;
+}

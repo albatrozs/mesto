@@ -1,0 +1,10 @@
+.popup__input-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0px;
+    border: none;
+    width: 358px;
+
+}

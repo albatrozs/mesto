@@ -1,4 +1,15 @@
 .elements__pic{
-    width: 20.76;
-    height: 18.13;
+    width: 20.76px;
+    height: 18.13px;
+    background: url(../../../images/heart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    
+}
+
+.elements__pic:hover{
+    cursor: pointer;
+    opacity: 0.6;
 }

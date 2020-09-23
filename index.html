@@ -22,12 +22,12 @@
               <div class="profile__info">
                 <div class="profile__group">
                   <h1 class="profile__name">Жак-Ив Кусто</h1>
-                  <button class="js-profile__open-popup profile__edit-button"></button>
+                  <button class="profile__edit-button"></button>
                 </div>
                 <p class="profile__job">Исследователь океана</p>
               </div>
             </div>
-            <button class="profile__add-button"></button>
+            <button class="profile__add-button" type="button"></button>
           </section>
           
           <section class="elements content__section">
@@ -36,66 +36,64 @@
               <img class="elements__foto" src="./images/Karachaevsk.jpg" alt="Карачаевск">
               <div class="elements__group">
                 <h2 class="elements__title">Карачаевск</h2>
-                <img class="elements__pic" src="./images/heart.svg" alt="Сердце">
+                <button class="elements__pic" type="button"></button>
               </div>
             </li>
             <li class="elements__card">
               <img class="elements__foto" src="./images/Elbrus.jpg" alt="Эльбрус">
               <div class="elements__group">
                 <h2 class="elements__title">Гора Эльбрус</h2>
-                <img class="elements__pic" src="./images/heart.svg" alt="Сердце">
+                <button class="elements__pic" type="button"></button>
               </div>
             </li>
             <li class="elements__card">
               <img class="elements__foto" src="./images/Dombai.jpg" alt="Домбай">
               <div class="elements__group">
                 <h2 class="elements__title">Домбай</h2>
-                <img class="elements__pic" src="./images/heart.svg" alt="Сердце">
+                <button class="elements__pic" type="button"></button>
               </div>
             </li>
             <li class="elements__card">
               <img class="elements__foto" src="./images/Elbrus.jpg" alt="Гора Элбрус">
               <div class="elements__group">
                 <h2 class="elements__title">Гора Эльбрус</h2>
-                <img class="elements__pic" src="./images/heart.svg" alt="Сердце">
+                <button class="elements__pic" type="button"></button>
               </div>
             </li>
             <li class="elements__card">
               <img class="elements__foto" src="./images/Dombai.jpg" alt="Домбай">
               <div class="elements__group">
                 <h2 class="elements__title">Домбай</h2>
-                <img class="elements__pic" src="./images/heart.svg" alt="Сердце">
+                <button class="elements__pic" type="button"></button>
               </div>
             </li>
             <li class="elements__card">
               <img class="elements__foto" src="./images/Karachaevsk.jpg" alt="Карачаевск">
               <div class="elements__group">
                 <h2 class="elements__title">Карачаево-Черкесск</h2>
-                <img class="elements__pic" src="./images/heart.svg" alt="Сердце">
+                <button class="elements__pic" type="button"></button>
               </div>
             </li>
             </ul>
           </section>
 
-        </main>
+        </main class="content">
 
         <footer class="footer">
           <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
         </footer>
 
         <section class="popup">
-          <div class="popup__blackout"></div>
           <div class="popup__container">
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form class="popup__input-container">
+            <form class="popup__input-container" name="popupForm">
               <fieldset class="popup__input-items">
-                <input type="text" value="Жак-Ив Кусто" class="popup__item popup__name-input">
-                <input type="text" value="Исследователь океана" class="popup__item popup__job-input">
+                <input type="text" name="name" value=" " class="popup__item popup__item_name">
+                <input type="text" name="job" value=" " class="popup__item popup__item_job">
               </fieldset>
               <button type="submit" class="popup__button">Сохранить</button>
             </form>
-            
-          <img class="popup__close-icon" src="./images/CloseIcon.svg" alt="закрыть попап">
+            <button class="popup__close-icon" type="reset"></button>
           </div>
         </section>
 

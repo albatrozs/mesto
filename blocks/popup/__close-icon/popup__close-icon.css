@@ -1,4 +1,8 @@
 .popup__close-icon{
+    background: url(../../../images/CloseIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
     width: 40.7px;
     height: 40.7px;
     position: absolute;
@@ -6,10 +10,21 @@
     right: 0px;
     margin-top: -40.7px;
     margin-right: -40.7px;
+    padding: 0;
     
 }
 
 .popup__close-icon:hover{
-    opacity: 50%;
+    opacity: 0.6;
     cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .popup__close-icon {
+        width: calc(40.7px * 0.65);
+        height: calc(40.7px * 0.65);
+        margin-top: calc(-40.7px * 0.65);
+        margin-right: calc(-40.7px * 0.65);
+      
+    }
 }

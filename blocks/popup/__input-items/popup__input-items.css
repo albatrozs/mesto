@@ -5,6 +5,14 @@
     margin: 0 auto;
     padding: 0px;
     border: none;
-    width: 358px;
+    max-width: 358px;
+}
 
+@media screen and (max-width: 425px) {
+    .popup__input-items {
+        margin-left: calc(36px * 0.65);
+        margin-right: calc(36px * 0.65);
+        max-width: 232.7px;
+      
+    }
 }

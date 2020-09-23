@@ -2,4 +2,34 @@
     font-size: 14px;
     line-height: 17px;
     color: black;
+    border: none;
+    width: 358px;
+    height: 14px;
+    border-bottom: 1px solid;
+    border-color: rgba(0, 0, 0, 0.2);;
+    margin: 0px 0px 29.74px;
+    padding: 0px 0px 13.26px;
+   
 }
+.popup__item:last-of-type{
+    padding: 0px 0px 13.34px;
+    margin: 0px 0px 48px;
+}
+   
+@media screen and (max-width: 425px) {
+    .popup__item {
+        margin: 0px 0px 20.81px;
+        padding: 0px 0px 9.28px;
+        max-width: calc(358px * 0.65);
+      
+    }
+}
+  
+@media screen and (max-width: 425px) {
+    .popup__item:last-of-type {
+        padding: 0px 0px 9.33px;
+        margin: 0px 0px 33.6px;
+      
+    }
+}
+  

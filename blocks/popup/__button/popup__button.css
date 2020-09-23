@@ -17,3 +17,13 @@
     background: rgba(0, 0, 0, 0.8);
     cursor: pointer;
 }
+
+@media screen and (max-width: 425px) {
+    .popup__button {
+        margin-left: calc(36px * 0.65);
+        margin-right: calc(36px * 0.65);
+        margin-bottom: calc(36px * 0.65);
+        max-width: calc(358px * 0.65);
+      
+    }
+}

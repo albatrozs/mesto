@@ -10,8 +10,8 @@
 
 @media screen and (max-width: 425px) {
     .popup__input-items {
-        margin-left: calc(36px * 0.65);
-        margin-right: calc(36px * 0.65);
+        margin-left: calc(36px * 0.6);
+        margin-right: calc(36px * 0.6);
         max-width: 232.7px;
       
     }

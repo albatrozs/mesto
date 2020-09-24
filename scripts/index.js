@@ -8,7 +8,8 @@ let formElement = document.querySelector('.popup__input-container');
 // Находим поля формы в DOM
 let nameInput = document.querySelector('.popup__item_name');// Воспользуйтесь инструментом .querySelector()
 let jobInput = document.querySelector('.popup__item_job');// Воспользуйтесь инструментом .querySelector()
-    
+let profileName = document.querySelector('.profile__name');
+let profileJob = document.querySelector('.profile__job'); 
 
 let popupToggle = function () {
     if (!popup.classList.contains('popup_opened')) {
@@ -16,7 +17,7 @@ let popupToggle = function () {
     nameInput.value = document.querySelector('.profile__name').textContent;
     jobInput.value = document.querySelector('.profile__job').textContent;
     } else{
-        popup.classList.remove('popup_opened')
+        popup.classList.remove('popup_opened');
     }
 }
 
@@ -28,14 +29,10 @@ function formSubmitHandler (evt) {
                         // Так мы можем определить свою логику отправки.
                         // О том, как это делать, расскажем позже.
 
-    // Выберите элементы, куда должны быть вставлены значения полей
-let profileName = document.querySelector('.profile__name');
-let profileJob = document.querySelector('.profile__job');
-
     // Вставьте новые значения с помощью textContent
     profileName.textContent = nameInput.value;
     profileJob.textContent = jobInput.value;
-    popup.classList.remove('popup_opened')
+    popup.classList.remove('popup_opened');
 }
 
 popupOpenButton.addEventListener('click', popupToggle);
@@ -43,4 +40,3 @@ popupCloseButton.addEventListener('click', popupToggle);
 // Прикрепляем обработчик к форме:
 // он будет следить за событием “submit” - «отправка»
 formElement.addEventListener('submit', formSubmitHandler);
-popupSaveButton.addEventListener('click', popupToggle);

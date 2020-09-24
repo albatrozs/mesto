@@ -20,7 +20,7 @@
     .popup__item {
         margin: 0px 0px 20.81px;
         padding: 0px 0px 9.28px;
-        max-width: calc(358px * 0.65);
+        max-width: calc(358px * 0.6);
       
     }
 }

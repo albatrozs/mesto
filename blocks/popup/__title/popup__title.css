@@ -11,12 +11,12 @@
 
 @media screen and (max-width: 425px) {
     .popup__title {
-        margin-left: calc(36px * 0.65);
-        margin-right: calc(34px * 0.65);
-        margin-bottom: calc(54px * 0.65);
-        width: calc(330px * 0.65);
-        font-size: calc(24px * 0.65);
-        line-height: calc(29px * 0.65);
+        margin-left: calc(36px * 0.6);
+        margin-right: calc(34px * 0.6);
+        margin-bottom: calc(54px * 0.6);
+        width: calc(330px * 0.6);
+        font-size: calc(24px * 0.6);
+        line-height: calc(29px * 0.6);
               
             }
         }

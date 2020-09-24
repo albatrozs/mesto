@@ -19,12 +19,12 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 505px) {
     .popup__close-icon {
-        width: calc(40.7px * 0.65);
-        height: calc(40.7px * 0.65);
-        margin-top: calc(-40.7px * 0.65);
-        margin-right: calc(-40.7px * 0.65);
+        width: calc(40.7px * 0.6);
+        height: calc(40.7px * 0.6);
+        margin-top: calc(-40.7px * 0.6);
+        margin-right: calc(-40.7px * 0.6);
       
     }
 }

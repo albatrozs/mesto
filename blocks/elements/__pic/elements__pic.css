@@ -4,6 +4,8 @@
     background: url(../../../images/heart.svg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+    overflow: visible;
     border: none;
     padding: 0;
     

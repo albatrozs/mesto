@@ -16,7 +16,7 @@
     margin: 0px 0px 48px;
 }
    
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 505px) {
     .popup__item {
         margin: 0px 0px 20.81px;
         padding: 0px 0px 9.28px;
@@ -25,7 +25,7 @@
     }
 }
   
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 505px) {
     .popup__item:last-of-type {
         padding: 0px 0px 9.33px;
         margin: 0px 0px 33.6px;

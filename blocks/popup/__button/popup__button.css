@@ -18,7 +18,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 505px) {
     .popup__button {
         margin-left: calc(36px * 0.6);
         margin-right: calc(36px * 0.6);
